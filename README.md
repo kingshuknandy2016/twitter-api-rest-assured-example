@@ -18,3 +18,5 @@ so the API is available for use. I have removed the file from the project for se
 Linkedin
 
 https://www.linkedin.com/in/sanderson-i-aa30b524/
+
+https://travis-ci.org/Sand5/twitter_rest_assured_project.svg?branch=master
