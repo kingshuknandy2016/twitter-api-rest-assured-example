@@ -6,8 +6,7 @@ This is Sanderson's example API level automation framework which demonstrates th
 Abstractions and POJO have been used in the projects.
 
 *Note in order to use the full project a properties file will be requied which store the OAuth details required to run against the API.
-also please do ensure you create an app using  https://apps.twitter.com link this is a mandatory requirement this links your Twitter account
-so the API is available for use. I have removed the file from the project for security purposes.
+also please do ensure you create an app using  https://apps.twitter.com link this is a mandatory requirement this links your Twitter account so the API is available for use. I have removed the file from the project for security purposes.*
 
 -All dependencies are managed through the pom.xml file
 
