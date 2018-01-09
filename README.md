@@ -3,7 +3,7 @@ This is a sample project testing the Twitter API using the rest assured framewor
 
 
 This is Sanderson's example API level automation framework which demonstrates the use of the Rest Assured framework.
-Abstractions and POJO have been used in the projects.
+Abstractions have been used in the projects to the test base code clean and readable and allow the use of the DRY principles.
 
 *Note in order to use the full project a properties file will be requied which store the OAuth details required to run against the API.
 also please do ensure you create an app using  https://apps.twitter.com link this is a mandatory requirement this links your Twitter account so the API is available for use. I have removed the file from the project for security purposes.*
