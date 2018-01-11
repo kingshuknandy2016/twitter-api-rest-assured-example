@@ -18,6 +18,6 @@ public class TwitterTestSetUp {
 
     @Before
     public  void setUpTwitterBaseUri () {
-    RestAssured.baseURI = TwitterBaseUri.gettwitterbaseurl();
+    RestAssured.baseURI = TwitterBaseUri.getTwitterBaseUrL();
     }
 }
