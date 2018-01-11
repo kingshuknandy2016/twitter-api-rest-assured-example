@@ -3,7 +3,8 @@ package twitterapitest;
 import org.junit.Test;
 
 
-import static org.hamcrest.core.StringStartsWith.startsWith;
+import static org.hamcrest.CoreMatchers.containsString;
+
 import static org.junit.Assert.assertThat;
 
 /**
@@ -19,7 +20,7 @@ public class TwitterTests extends TwitterTestSetUp {
         twitter.createTweet();
         tweet = twitter.getTweet();
 
-        assertThat(tweet,startsWith("This tweet was created using rest assured"));
+        assertThat(tweet,containsString("This tweet was created using rest assured"));
     }
 
     @Test()

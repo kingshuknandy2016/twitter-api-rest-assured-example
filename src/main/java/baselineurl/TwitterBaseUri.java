@@ -11,7 +11,7 @@ public abstract class TwitterBaseUri {
 
     static final String TWITTERBASEURL = "https://api.twitter.com/1.1/statuses";
 
-    public static String getTWITTERBASEURL() {
+    public static String getTwitterBaseUrL() {
         return  TWITTERBASEURL;
     }
 

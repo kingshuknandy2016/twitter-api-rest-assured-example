@@ -3,9 +3,9 @@ package restassurredresuablemethods;
 import baselineurl.TwitterBaseUri;
 import dataextractor.ExtractJsonData;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 
 
 import static datagenerator.RandomDataGenerator.getNumericRandomData;
@@ -37,13 +37,16 @@ public class ReusableApiMethods {
 // The createTweet method creates a tweet and checks that the status 200
 
     public String createTweet() {
+
+
         Response res = getOauth()
+
                 .queryParam("status","This tweet was created using rest assured " + getNumericRandomData(2))
                 .when()
                 .post(loadTheEndPointProperty("CREATE_TWEET"))
                 .then()
-                .contentType(JSON)
                 .assertThat().statusCode(200)
+                .contentType(ContentType.JSON)
                 .extract().response();
 
         ExtractJsonData js = new ExtractJsonData();
@@ -56,9 +59,9 @@ public class ReusableApiMethods {
 // The deleteTweet method passes the id of the created tweet to the delete end point and checks status is 200
     public void deleteTweet() {
         String tweet = createTweet();
-        //System.out.println(tweet);
+        System.out.println(tweet);
 
-        RestAssured.baseURI = TwitterBaseUri.getTWITTERBASEURL();
+        RestAssured.baseURI = TwitterBaseUri.gettwitterbaseurl();
 
                 getOauth()
                 .when()
