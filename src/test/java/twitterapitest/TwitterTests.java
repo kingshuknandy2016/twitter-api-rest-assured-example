@@ -15,6 +15,7 @@ import static org.junit.Assert.assertThat;
 //@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TwitterTests extends TwitterTestSetUp {
 
+
     @Test()
     public void getRecentTweet() {
         twitter.createTweet();
