@@ -61,7 +61,7 @@ public class ReusableApiMethods {
         String tweet = createTweet();
         System.out.println(tweet);
 
-        RestAssured.baseURI = TwitterBaseUri.gettwitterbaseurl();
+        RestAssured.baseURI = TwitterBaseUri.getTwitterBaseUrL();
 
                 getOauth()
                 .when()
