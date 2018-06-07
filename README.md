@@ -18,4 +18,4 @@ Linkedin
 
 https://www.linkedin.com/in/sanderson-i-aa30b524/
 
-[![Build Status](https://travis-ci.org/Sand5/twitter_rest_assured_project.svg?branch=master)](https://travis-ci.org/Sand5/twitter_rest_assured_project)
+[![Build Status](https://travis-ci.org/Sand5/twitter-api-rest-assured-example.svg?branch=master)](https://travis-ci.org/Sand5/twitter-api-rest-assured-example)
