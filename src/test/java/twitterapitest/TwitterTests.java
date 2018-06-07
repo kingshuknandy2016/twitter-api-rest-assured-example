@@ -16,7 +16,7 @@ import static org.junit.Assert.assertThat;
 public class TwitterTests extends TwitterTestSetUp {
 
 
-    @Test()
+    @Test
     public void getRecentTweet() {
         twitter.createTweet();
         tweet = twitter.getTweet();
@@ -24,13 +24,13 @@ public class TwitterTests extends TwitterTestSetUp {
         assertThat(tweet,containsString("This tweet was created using rest assured"));
     }
 
-    @Test()
+    @Test
     public void createNewTweet () {
         twitter.createTweet();
     }
 
 
-    @Test()
+    @Test
     public void deleteExistingTweet() {
         twitter.deleteTweet();
 
